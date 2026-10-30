@@ -1,0 +1,19 @@
+{
+    "day": 25,
+    "title": "Detailed Error and Failure Analysis",
+    "purpose": "Document error behaviour and potential failure modes using existing validation and prediction evidence.",
+    "source": "Existing Day 20 analysis and frozen project evidence.",
+    "retraining_performed": false,
+    "new_model_comparison_performed": false,
+    "models_modified": false,
+    "new_predictions_required": false,
+    "prediction_analysis_available": false,
+    "error_statistics_available": true,
+    "failure_mode_categories": [
+        "High prediction error cases",
+        "Charging-phase transitions",
+        "Temperature variation",
+        "Cycle-to-cycle variation",
+        "Remaining-time sensitivity"
+    ]
+}

@@ -1,0 +1,6 @@
+Failure_Mode,Possible_Reason,Evidence,Action
+High prediction error cases,Certain operating conditions or charging phases may be less represented or more difficult for the model.,High-error samples identified from the existing prediction/error evidence.,Monitor these cases during future validation and testing.
+Charging-phase transitions,Changes between charging states can create rapidly changing electrical characteristics.,"Battery voltage, current, temperature and accumulated energy can change across charging phases.",Treat phase-transition cases as potential sources of larger prediction error.
+Temperature variation,Battery behaviour changes with operating temperature.,Temperature is one of the final model input features.,Continue checking model behaviour across different temperature conditions.
+Cycle-to-cycle variation,Battery characteristics can change between charging cycles.,Cycle is included as a final model feature.,Check performance across different cycles during future validation.
+Remaining-time sensitivity,Remaining charging time depends strongly on the current charging state and elapsed charging process.,Elapsed Time and electrical measurements are used by the final Remaining Charging Time model.,Monitor predictions near charging-phase changes and session boundaries.
