@@ -1,0 +1,15 @@
+{
+    "SOC_task": {
+        "final_model": "XGBoost",
+        "artifact": "FINAL_SOC_XGBoost_day22.joblib",
+        "selection_source": "Day 19 model selection / Day 20 validation evidence",
+        "test_R2": 0.990521
+    },
+    "Remaining_Charging_Time_task": {
+        "final_model": "Random Forest",
+        "artifact": "FINAL_Remaining_Charging_Time_Random_Forest_day22.joblib",
+        "selection_source": "Day 19 model selection / Day 20 validation evidence",
+        "test_R2": 0.998756,
+        "validation_R2": 0.996502
+    }
+}
