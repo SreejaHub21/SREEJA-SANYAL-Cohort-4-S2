@@ -1,0 +1,34 @@
+{
+    "project": "Battery State of Charge and Remaining Charging Time Prediction",
+    "final_features": [
+        "Voltage",
+        "Current",
+        "Temperature",
+        "Elapsed Time",
+        "Cycle",
+        "WhAccu",
+        "Power"
+    ],
+    "SOC_features": [
+        "Voltage",
+        "Current",
+        "Temperature",
+        "Elapsed Time",
+        "Cycle",
+        "WhAccu",
+        "Power"
+    ],
+    "Remaining_Charging_Time_features": [
+        "Voltage",
+        "Current",
+        "Temperature",
+        "Elapsed Time",
+        "Cycle",
+        "WhAccu",
+        "Power"
+    ],
+    "excluded_from_final_model_inputs": [
+        "Capacity"
+    ],
+    "note": "Feature lists were read directly from the frozen Day 22 model artifacts. No retraining was performed."
+}

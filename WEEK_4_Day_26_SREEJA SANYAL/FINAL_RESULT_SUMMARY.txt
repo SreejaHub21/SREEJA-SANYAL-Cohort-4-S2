@@ -1,0 +1,29 @@
+
+FINAL MODEL RESULT SUMMARY
+SOC Prediction
+Model: XGBoost Regressor
+Test R²: 0.990521
+Remaining Charging Time Prediction
+Model: Random Forest Regressor
+Test R²: 0.998756
+Remaining Charging Time Validation
+Model: Random Forest Regressor
+Validation R²: 0.996502
+Final Feature Set
+1. Voltage
+2. Current
+3. Temperature
+4. Elapsed Time
+5. Cycle
+6. WhAccu
+7. Power
+Important:
+Capacity is not an input feature of the frozen final models.
+Model Selection
+SOC:
+XGBoost Regressor
+Remaining Charging Time:
+Random Forest Regressor
+The reported values are based on the existing frozen
+validation/test evidence. No retraining was performed during
+Day 26.

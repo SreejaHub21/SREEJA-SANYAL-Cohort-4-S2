@@ -1,0 +1,46 @@
+{
+    "day": 26,
+    "title": "Software Package and Final Documentation",
+    "timestamp": "2026-10-30T16:22:53.072450",
+    "retraining_performed": false,
+    "models": {
+        "SOC": {
+            "model": "XGBoost Regressor",
+            "artifact": "FINAL_SOC_XGBoost_day22.joblib",
+            "features": [
+                "Voltage",
+                "Current",
+                "Temperature",
+                "Elapsed Time",
+                "Cycle",
+                "WhAccu",
+                "Power"
+            ],
+            "test_R2": 0.990521
+        },
+        "Remaining Charging Time": {
+            "model": "Random Forest Regressor",
+            "artifact": "FINAL_Remaining_Charging_Time_Random_Forest_day22.joblib",
+            "features": [
+                "Voltage",
+                "Current",
+                "Temperature",
+                "Elapsed Time",
+                "Cycle",
+                "WhAccu",
+                "Power"
+            ],
+            "test_R2": 0.998756,
+            "validation_R2": 0.996502
+        }
+    },
+    "package_structure_created": true,
+    "inference_test_completed": true,
+    "capacity_used_as_model_input": false,
+    "notes": [
+        "Final feature lists were read directly from frozen model artifacts.",
+        "Both final models use seven features.",
+        "No retraining was performed.",
+        "Day 22-25 records were preserved."
+    ]
+}

@@ -1,0 +1,4 @@
+Task,Final Model,R2
+SOC Prediction,XGBoost Regressor,0.990521
+Remaining Charging Time Prediction,Random Forest Regressor,0.998756
+Remaining Charging Time Validation,Random Forest Regressor,0.996502

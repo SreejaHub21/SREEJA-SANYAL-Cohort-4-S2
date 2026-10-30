@@ -1,0 +1,36 @@
+
+BATTERY PREDICTION PIPELINE
+The final software package uses the frozen Day 22 models.
+Tasks
+1. Battery State of Charge (SOC) Prediction
+   Model: XGBoost Regressor
+2. Remaining Charging Time Prediction
+   Model: Random Forest Regressor
+Final Model Inputs
+Both frozen models use the following 7 features:
+1. Voltage
+2. Current
+3. Temperature
+4. Elapsed Time
+5. Cycle
+6. WhAccu
+7. Power
+
+Capacity
+Capacity is NOT an input feature of the frozen final models.
+The feature list was obtained directly from the saved model
+artifacts using the model's feature_names_in_ property.
+
+
+Inference
+A new battery observation is supplied using the seven required
+features.
+The SOC model produces the SOC prediction.
+The Remaining Charging Time model produces the remaining-time
+prediction.
+
+
+Important
+The final frozen models are used directly.
+
+No retraining is performed during inference.

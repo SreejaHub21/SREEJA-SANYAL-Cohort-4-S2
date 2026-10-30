@@ -1,0 +1,12 @@
+{
+    "SOC": {
+        "task": "Battery State of Charge Prediction",
+        "model": "XGBoost Regressor",
+        "artifact": "FINAL_SOC_XGBoost_day22.joblib"
+    },
+    "Remaining Charging Time": {
+        "task": "Remaining Charging Time Prediction",
+        "model": "Random Forest Regressor",
+        "artifact": "FINAL_Remaining_Charging_Time_Random_Forest_day22.joblib"
+    }
+}
